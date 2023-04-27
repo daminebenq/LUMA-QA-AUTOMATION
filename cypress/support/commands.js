@@ -44,3 +44,10 @@ Cypress.Commands.add('checkCartNotEmpty', () => {
     })
 })
 
+Cypress.Commands.add('visitUrl', (urlParam) => {
+    const homeUrl = Cypress.env("homeUrl");
+    const ordersUrl = Cypress.env("ordersUrl");
+
+    const url = urlParam === 'home' ? homeUrl : ordersUrl;
+    cy.visit(url);
+});

@@ -2,8 +2,7 @@ import { pageElement } from "./all/selectors/elements";
 
 export class Reorder {
   static reOrder() {
-    const url = Cypress.env("homeUrl");
-    cy.visit(url);
+    cy.visitUrl('home');
     cy.contains(pageElement.welcomeMessage);
     cy.get(
       pageElement.customerDropdown

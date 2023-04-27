@@ -16,6 +16,6 @@ export const utilities = {
 
 export const appMessages = {
     invalidEmail: "Please enter a valid email address (Ex: johndoe@domain.com).",
-    requiredField: "A login and a password are required",
+    requiredField: "This is a required field",
     successfulLoginMessage: "Welcome,"
 }

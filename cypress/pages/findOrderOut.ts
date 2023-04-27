@@ -8,8 +8,7 @@ export class Order {
       email = selectors.email,
       isZip = false
     ) {
-    const orders = Cypress.env("ordersUrl");
-    cy.visit(orders);
+    cy.visitUrl('orders');
     cy.contains(pageElement.orderAndReturns).should("be.visible");
     cy.get(pageElement.orderIdInput).type(order);
     cy.get(pageElement.orderLastName).type(name);

@@ -12,7 +12,7 @@ describe("Tests login features", () => {
     LoginService.login(true);
   });
 
-  it.only("Login testing required fields", () => {
+  it("Login testing required fields", () => {
     HomePage.visit();
     LoginService.login(false, true);
   });

@@ -4,8 +4,7 @@ import { pageElement } from "./all/selectors/elements";
 
 class Delete {
   static deleteCart() {
-    const url = Cypress.env("homeUrl");
-    cy.visit(url);
+    cy.visitUrl('home');
     cy.checkCartNotEmpty();
     cy.get('.action-delete').eq(0).click()
     cy.wait(3000);
