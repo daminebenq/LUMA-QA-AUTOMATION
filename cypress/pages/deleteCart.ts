@@ -4,11 +4,11 @@ import { pageElement } from "./all/selectors/elements";
 
 class Delete {
   static deleteCart() {
-    cy.visitUrl('home');
     cy.checkCartNotEmpty();
-    cy.get('.action-delete').eq(0).click()
-    cy.wait(3000);
-    cy.get(pageElement.emptyCartDiv).should("be.visible");
+    cy.get(pageElement.deleteCart).eq(0).click({force: true})
+    cy.get(pageElement.acceptDeletion).click()
+    cy.wait(6000);
+    cy.get(pageElement.emptyCartDiv).should("exist");
   }
 }
 

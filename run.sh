@@ -54,10 +54,10 @@ echo "Current PATH: $PWD"
 
 if [ "$TEST" = "all" ]; then
     echo "Running Test: $TEST_PATH/$TEST.feature"
-    npx cypress run --config-file=qa.config.js --env allure=true || npm run allure:generate || npm run deploy
+    npx cypress run --config-file=qa.config.js --env allure=true || npm run allure:report
 else
     echo "Running Test: $TEST_PATH/$TEST.feature"
-    npx cypress run --config-file=qa.config.js --spec "$TEST_PATH/$TEST.cy.ts" --env allure=true --headed || npm run allure:generate || npm run deploy
+    npx cypress run --config-file=qa.config.js --spec "$TEST_PATH/$TEST.cy.ts" --env allure=true --headed --browser chrome || npm run allure:report
 fi
 }
 

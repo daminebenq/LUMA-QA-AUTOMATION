@@ -8,6 +8,7 @@ export class Order {
       email = selectors.email,
       isZip = false
     ) {
+    cy.wait(5000)
     cy.visitUrl('orders');
     cy.contains(pageElement.orderAndReturns).should("be.visible");
     cy.get(pageElement.orderIdInput).type(order);
