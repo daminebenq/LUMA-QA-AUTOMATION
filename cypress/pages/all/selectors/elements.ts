@@ -1,0 +1,48 @@
+export const selectors = {
+    email: "damine.one@gmail.com",
+    pass: "azerty123!",
+    orderNumber: "000005915",
+    lastName: "Doe",
+    zip: "62704",
+};
+
+export const pageElement = {
+    categoryMen: "#ui-id-5 > .ui-menu-icon",
+    categoryTops: "#ui-id-17",
+    firstProduct: ":nth-child(1) > .product-item-info > .photo > .product-image-container > .product-image-wrapper > .product-image-photo",
+    thirdProduct: ":nth-child(3) > .product-item-info > .photo > .product-image-container > .product-image-wrapper > .product-image-photo",
+    sizeL: "#option-label-size-143-item-170",
+    colorOption1: "#option-label-color-93-item-52",
+    colorOption2: "#option-label-color-93-item-57",
+    quantity: "#qty",
+    addToCart: "Add to Cart",
+    showCart: ".showcart",
+    proceedToCheckout: "Proceed to Checkout",
+    search: "#search",
+    searchButton: ".action.search",
+    cartCounter: ".counter-number",
+    bestWayDeliveryOption: "Best Way",
+    nextButton: "Next",
+    placeOrder: "Place Order",
+    thankYouMessage: "Thank you for your purchase",
+    deleteCart: ".action-delete",
+    emptyCartDiv: ".cart-empty > :nth-child(2)",
+    welcomeMessage: "Welcome, ",
+    customerDropdown: ":nth-child(2) > .customer-welcome > .customer-name > .action",
+    myAccount: "My Account",
+    myOrders: "My Orders",
+    reorderButton: ":nth-child(1) > .actions > .order > span",
+    shoppingCartHeader: "Shopping Cart",
+    primaryCheckout: ".checkout-methods-items > .item > .action",
+    orderAndReturns: "Orders and Returns",
+    orderIdInput: "#oar-order-id",
+    orderLastName: "#oar-billing-lastname",
+    quickSearchDropdown: "#quick-search-type-id",
+    zip: "zip",
+    oarZip: "#oar_zip",
+    continueButton: "Continue",
+    aorEmail: "#oar_email",
+    
+
+}
+
